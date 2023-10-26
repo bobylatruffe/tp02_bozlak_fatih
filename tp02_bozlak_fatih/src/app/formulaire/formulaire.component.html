@@ -1,0 +1,42 @@
+<div>
+  <form>
+    <label for="nom">Nom:</label><br>
+    <input type="text" id="nom" name="nom" [(ngModel)]="utilisateur.nom"><br>
+
+    <label for="prenom">Prénom:</label><br>
+    <input type="text" id="prenom" name="prenom" [(ngModel)]="utilisateur.prenom"><br>
+
+    <label for="adresse">Adresse:</label><br>
+    <input type="text" id="adresse" name="adresse" [(ngModel)]="utilisateur.adresse"><br>
+
+    <label for="cp">Code Postal:</label><br>
+    <input type="text" id="cp" name="cp" [(ngModel)]="utilisateur.cp"><br>
+
+    <label for="ville">Ville:</label><br>
+    <input type="text" id="ville" name="ville" [(ngModel)]="utilisateur.ville"><br>
+
+    <label for="tel">Téléphone:</label><br>
+    <input type="tel" id="tel" name="tel" [(ngModel)]="utilisateur.tel"><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" [(ngModel)]="utilisateur.email"><br>
+
+    <label for="civilite">Civilité:</label><br>
+    <select id="civilite" name="civilite" [(ngModel)]="utilisateur.civilite">
+      <option value="homme">Homme</option>
+      <option value="femme">Femme</option>
+      <option value="autre">Autre</option>
+    </select><br>
+
+    <label for="password">Mot de passe:</label><br>
+    <input type="password" id="password" name="password" [(ngModel)]="utilisateur.mdp"><br>
+
+    <label for="login">Identifiant:</label><br>
+    <input type="text" id="login" name="login" [(ngModel)]="utilisateur.identifiant"><br>
+
+    <label for="pays">Pays:</label><br>
+    <input type="text" id="pays" name="pays" [(ngModel)]="utilisateur.pays"><br>
+
+    <input type="submit" value="Soumettre" (click)="afficherLesInfos()">
+  </form>
+</div>
